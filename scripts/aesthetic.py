@@ -284,7 +284,7 @@ def on_ui_tabs():
         with gr.Column():
             with gr.Tabs():
                 with gr.TabItem(label="Single"):
-                    with gr.Row().style(equal_height=False):
+                    with gr.Row(equal_height=False):
                         with gr.Column():
                             # with gr.Tabs():
                             image = gr.Image(
@@ -306,7 +306,7 @@ def on_ui_tabs():
 
                 with gr.TabItem(label="Batch"):
 
-                    with gr.Row().style(equal_height=False):
+                    with gr.Row(equal_height=False):
                         with gr.Column():
                             input_dir_input = gr.Textbox(
                                 label="Image Directory",
